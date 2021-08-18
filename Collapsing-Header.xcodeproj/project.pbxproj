@@ -13,10 +13,11 @@
 		CB57D18826C7817A001387FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB57D18626C7817A001387FF /* Main.storyboard */; };
 		CB57D18A26C7817A001387FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57D18926C7817A001387FF /* Assets.xcassets */; };
 		CB57D18D26C7817A001387FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB57D18B26C7817A001387FF /* LaunchScreen.storyboard */; };
+		CB57D19526C78BCB001387FF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57D19426C78BCB001387FF /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB57D17D26C7817A001387FF /* CollapsingHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollapsingHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB57D17D26C7817A001387FF /* Collapsing-Header.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collapsing-Header.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57D18026C7817A001387FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB57D18226C7817A001387FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB57D18426C7817A001387FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		CB57D18926C7817A001387FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB57D18C26C7817A001387FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB57D18E26C7817A001387FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB57D19426C78BCB001387FF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		CB57D17E26C7817A001387FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB57D17D26C7817A001387FF /* CollapsingHeader.app */,
+				CB57D17D26C7817A001387FF /* Collapsing-Header.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +62,7 @@
 				CB57D18226C7817A001387FF /* SceneDelegate.swift */,
 				CB57D18426C7817A001387FF /* ViewController.swift */,
 				CB57D18626C7817A001387FF /* Main.storyboard */,
+				CB57D19426C78BCB001387FF /* CustomCell.swift */,
 				CB57D18926C7817A001387FF /* Assets.xcassets */,
 				CB57D18B26C7817A001387FF /* LaunchScreen.storyboard */,
 				CB57D18E26C7817A001387FF /* Info.plist */,
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB57D17C26C7817A001387FF /* CollapsingHeader */ = {
+		CB57D17C26C7817A001387FF /* Collapsing-Header */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB57D19126C7817A001387FF /* Build configuration list for PBXNativeTarget "CollapsingHeader" */;
+			buildConfigurationList = CB57D19126C7817A001387FF /* Build configuration list for PBXNativeTarget "Collapsing-Header" */;
 			buildPhases = (
 				CB57D17926C7817A001387FF /* Sources */,
 				CB57D17A26C7817A001387FF /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = CollapsingHeader;
+			name = "Collapsing-Header";
 			productName = CollapsingHeader;
-			productReference = CB57D17D26C7817A001387FF /* CollapsingHeader.app */;
+			productReference = CB57D17D26C7817A001387FF /* Collapsing-Header.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB57D17826C7817A001387FF /* Build configuration list for PBXProject "CollapsingHeader" */;
+			buildConfigurationList = CB57D17826C7817A001387FF /* Build configuration list for PBXProject "Collapsing-Header" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB57D17C26C7817A001387FF /* CollapsingHeader */,
+				CB57D17C26C7817A001387FF /* Collapsing-Header */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +142,7 @@
 			files = (
 				CB57D18526C7817A001387FF /* ViewController.swift in Sources */,
 				CB57D18126C7817A001387FF /* AppDelegate.swift in Sources */,
+				CB57D19526C78BCB001387FF /* CustomCell.swift in Sources */,
 				CB57D18326C7817A001387FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +296,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssm.CollapsingHeader;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ssm.Collapsing-Header";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ssm.CollapsingHeader;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ssm.Collapsing-Header";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB57D17826C7817A001387FF /* Build configuration list for PBXProject "CollapsingHeader" */ = {
+		CB57D17826C7817A001387FF /* Build configuration list for PBXProject "Collapsing-Header" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB57D18F26C7817A001387FF /* Debug */,
@@ -329,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB57D19126C7817A001387FF /* Build configuration list for PBXNativeTarget "CollapsingHeader" */ = {
+		CB57D19126C7817A001387FF /* Build configuration list for PBXNativeTarget "Collapsing-Header" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB57D19226C7817A001387FF /* Debug */,
