@@ -11,20 +11,30 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collapsing_Header2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collapsing_Header3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzO-Zj-u9o" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFh-CB-Vde">
+                                        <rect key="frame" x="174.33333333333334" y="55" width="41.666666666666657" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="3nE-Yh-ck2"/>
+                                    <constraint firstItem="ZFh-CB-Vde" firstAttribute="top" secondItem="pzO-Zj-u9o" secondAttribute="top" constant="55" id="I4b-b8-dFK"/>
+                                    <constraint firstItem="ZFh-CB-Vde" firstAttribute="centerX" secondItem="pzO-Zj-u9o" secondAttribute="centerX" id="NGW-h3-aCB"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="MpB-ck-Yay">
-                                <rect key="frame" x="0.0" y="80" width="390" height="764"/>
+                                <rect key="frame" x="0.0" y="100" width="390" height="744"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-rI-qRC">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="800"/>
@@ -68,12 +78,14 @@
                             <constraint firstItem="pzO-Zj-u9o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D3j-Ji-PMg"/>
                             <constraint firstAttribute="bottom" secondItem="MpB-ck-Yay" secondAttribute="bottom" id="KlA-in-33D"/>
                             <constraint firstAttribute="trailing" secondItem="MpB-ck-Yay" secondAttribute="trailing" id="N3l-BG-L0u"/>
-                            <constraint firstItem="MpB-ck-Yay" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="80" id="Wtg-ak-cQ4"/>
+                            <constraint firstItem="MpB-ck-Yay" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="Wtg-ak-cQ4"/>
                             <constraint firstItem="pzO-Zj-u9o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bRr-hl-rVP"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="container" destination="KW9-rI-qRC" id="Yno-ZV-3ak"/>
                         <outlet property="headerHeight" destination="3nE-Yh-ck2" id="JWi-bI-pU6"/>
+                        <outlet property="headerTitle" destination="ZFh-CB-Vde" id="9Be-ge-d3R"/>
                         <outlet property="scrollView" destination="MpB-ck-Yay" id="HTj-K0-TW6"/>
                         <outlet property="scrollViewTop" destination="Wtg-ak-cQ4" id="iAX-xd-VEZ"/>
                     </connections>
