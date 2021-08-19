@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     private let maxHeaderHeight: CGFloat = 250
     private let minHeaderHeight: CGFloat = 80
-    private var previousScrollOffset: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
